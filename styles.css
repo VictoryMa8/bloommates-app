@@ -8,6 +8,10 @@
   width: 18%;
 }
 
+.logo3 {
+  height: 50px;
+}
+
 .poster {
   height: 50%;
   width: 25%;
@@ -25,4 +29,31 @@
 #card-1 {
   height: 100%;
   border-radius: 50px;
+}
+
+.container2 {
+  margin: 0px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.container3 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img {
+  height: 500px;
+}
+
+.container2:link {
+  text-decoration: none;
 }
