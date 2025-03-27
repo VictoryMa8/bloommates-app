@@ -1,11 +1,9 @@
-.logo1 {
-  height: 10%;
-  width: 18%;
-}
-
+.logo1,
 .logo2 {
-  height: 18%;
-  width: 18%;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
 }
 
 .logo3 {
@@ -82,12 +80,15 @@
 }
 
 .hero-image {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .logo-image {
-  width: 50%;
+  width: 35%;
   height: auto;
+  max-width: 400px;
 }
 
 .buttons {
@@ -120,7 +121,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .content {
@@ -163,15 +164,64 @@
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active {
-  background-color: #9782ff; /* Green accent color */
+  background-color: #9782ff;
   color: white;
 }
 
 ul {
-  font-size: 1.125em; /* Adjusts the font size for the entire list */
+  font-size: 1.125em;
   text-align: left;
 }
 
 ul li {
-  font-size: 1.25em; /* Adjusts the font size for each list item */
+  font-size: 1.25em;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 900px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-img {
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-image {
+    width: 60%;
+  }
+
+  .featurelist .containerlanding {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featurelist ul {
+    padding-left: 20px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-image {
+    width: 80%;
+  }
+
+  .featurelist h1 {
+    font-size: 2em;
+  }
+
+  .featurelist ul li {
+    font-size: 1em;
+  }
 }
