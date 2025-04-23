@@ -43,13 +43,13 @@
 .container3 {
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .feature-img {
-  height: 100%;
+  gap: 20px;
+  height: 400px;
 }
 
 .container2:link {
